@@ -30,17 +30,21 @@ router.get("/actualizar-reserva/:id", renderEditarReserva);
 //         Rutas para CRUD de reservas
 // ==========================================
 
+//Obtener una reserva
+
+router.get("/api/:id", obtenerUnaReserva);
+
 // Obtener todas las reservas
-router.get('/api/',);
- 
+router.get("/api/", obtenerReserva);
+
 // Crear una reserva
-router.post('/api/',);
- 
+router.post("/api/", crearReserva);
+
 // Actualizar una reserva
-router.put('/api/:id',);
- 
+router.put("/api/:id", actualizarReserva);
+
 // Eliminar una reserva de forma lógica
-router.delete('/api/:id',);
+router.delete("/api/:id", eliminarReserva);
 
  
  module.exports = router;
