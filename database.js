@@ -14,4 +14,3 @@ const sequelize = new Sequelize(
     sequelize,
     DataTypes
   }
-  
