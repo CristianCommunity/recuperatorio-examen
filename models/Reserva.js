@@ -26,7 +26,7 @@ const Reserva = sequelize.define('Reserva', {
         type: DataTypes.DATE,
         allowNull: false
     },
-    fecha_vuelta: {
+    fecha_regreso: {
         type: DataTypes.DATE,
         allowNull: true,
     },
