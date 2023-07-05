@@ -1,5 +1,5 @@
 const obtenerDatos = async () => {
-    // Pedir las reservas al servidor
+    // Solicitar las reservas al servidor
     const data = await fetch('/api', {
         method: 'GET'
     });
