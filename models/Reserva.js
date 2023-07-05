@@ -38,6 +38,10 @@ const Reserva = sequelize.define('Reserva', {
         type: DataTypes.INTEGER,
         allowNull: false
     },
+    costo_vuelo: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
     telefono: {
         type: DataTypes.STRING(100),
         allowNull: false
