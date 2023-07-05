@@ -16,7 +16,7 @@ reservas.forEach(reserva => {
             <td>${reserva.codigo}</td>
             <td>${reserva.nombre}</td>
             <td>${reserva.apellido}</td>
-            <td>${reserva.fecha_salida}</td>
+            <td>${reserva.fecha_partida}</td>
             <td>${reserva.fecha_regreso}</td>
             <td>${reserva.destino}</td>
             <td>${reserva.cantidad_personas}</td>

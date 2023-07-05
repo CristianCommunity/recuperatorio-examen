@@ -28,7 +28,7 @@ const Reserva = sequelize.define('Reserva', {
     },
     fecha_regreso: {
         type: DataTypes.DATE,
-        allowNull: true,
+        allowNull: false,
     },
     destino: {
         type: DataTypes.STRING(100),

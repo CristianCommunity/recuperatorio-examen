@@ -3,9 +3,9 @@ const reservaId = formReserva.dataset.id;
 
 const nombre = document.querySelector('#nombre')
 const apellido = document.querySelector('#apellido')
-const fecha_salida = document.querySelector('#fecha_salida')
+const fecha_partida = document.querySelector('#fecha_partida')
 const fecha_regreso = document.querySelector('#fecha_regreso')
-const habitacion = document.querySelector('#destino')
+const destino = document.querySelector('#destino')
 const cantidad_personas = document.querySelector('#cantidad_personas')
 const costo_vuelo = document.querySelector('#costo_vuelo')
 const telefono = document.querySelector('#telefono')
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Mostrar en el formulario los datos de la reserva que se quiere actualizar
     nombre.value = data.nombre;
     apellido.value = data.apellido;
-    fecha_salida.value = data.fecha_salida;
+    fecha_partida.value = data.fecha_partida;
     fecha_regreso.value = data.fecha_regreso;
     destino.value = data.destino;
     cantidad_personas.value = data.cantidad_personas;
@@ -36,9 +36,9 @@ formReserva.addEventListener('submit', async (e) => {
     reservaActualizada = {
         nombre: nombre.value,
         apellido: apellido.value,
-        fecha_ingreso: fecha_salida.value,
-        fecha_salida: fecha_regreso.value,
-        habitacion: destino.value,
+        fecha_partida: fecha_partida.value,
+        fecha_regreso: fecha_regreso.value,
+        destino: destino.value,
         cantidad_personas: cantidad_personas.value,
         costo_vuelo: costo_vuelo.value,
         telefono: telefono.value,

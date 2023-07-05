@@ -5,7 +5,7 @@ formNuevaReserva.addEventListener('submit', async (e) =>{
 
     const nombre = document.querySelector('#nombre').value;
     const apellido = document.querySelector('#apellido').value;
-    const fecha_salida = document.querySelector('#fecha_salida').value;
+    const fecha_partida = document.querySelector('#fecha_salida').value;
     const fecha_regreso = document.querySelector('#fecha_regreso').value;
     const destino = document.querySelector('#destino').value;
     const cantidad_personas = document.querySelector('#cantidad_personas').value;
@@ -16,7 +16,7 @@ formNuevaReserva.addEventListener('submit', async (e) =>{
     const nuevaReserva = {
         nombre,
         apellido,
-        fecha_salida,
+        fecha_partida,
         fecha_regreso,
         destino,
         cantidad_personas,

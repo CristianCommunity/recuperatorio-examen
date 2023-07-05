@@ -61,6 +61,7 @@ ctrl.crearReserva = async (req, res) => {
         fecha_regreso,
         destino,
         cantidad_personas,
+        costo_vuelo,
         telefono,
         email,
       } = req.body;
@@ -72,9 +73,11 @@ ctrl.crearReserva = async (req, res) => {
         fecha_regreso,
         destino,
         cantidad_personas,
+        costo_vuelo,
         telefono,
         email,
       });
+
       //Se guarda en la BD
       await nuevaReserva.save();
       return res.status(201).json({
